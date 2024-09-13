@@ -13,7 +13,7 @@ class DescriptionLabel: UILabel {
     let color: UIColor
     let fontSize: CGFloat
     
-    init(labelText: String, color: UIColor = .systemGray3, fontSize: CGFloat = 13) {
+    init(labelText: String, color: UIColor = .gray, fontSize: CGFloat = 13) {
         self.labelText = labelText
         self.color = color
         self.fontSize = fontSize

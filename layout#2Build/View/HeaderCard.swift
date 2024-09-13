@@ -14,6 +14,7 @@ class HeaderCard: UIView {
     
     private lazy var headerCardLabel: UILabel = HeaderLabel(labelText: headerText, fontSize: 16)
     private lazy var descrLabel: UILabel = DescriptionLabel(labelText: descriptText)
+    
     private let cardBtn: UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setImage(UIImage(systemName: "chevron.right"), for: .normal)
@@ -40,9 +41,7 @@ class HeaderCard: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: 135).isActive = true
         layer.cornerRadius = 10
-        addSubview(headerCardLabel)
-        addSubview(descrLabel)
-        addSubview(cardBtn)
+        addSubviews(headerCardLabel, descrLabel, cardBtn)
     }
     
     private func setConstraints() {
@@ -56,9 +55,7 @@ class HeaderCard: UIView {
             
             descrLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             descrLabel.topAnchor.constraint(equalTo: headerCardLabel.bottomAnchor, constant: 4),
-            
-//            descrLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50)
-            descrLabel.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5)
+            descrLabel.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7)
         ])
     }
     

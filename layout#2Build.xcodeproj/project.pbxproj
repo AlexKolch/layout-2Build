@@ -15,6 +15,11 @@
 		FCBA806F2C78A4F10082BF2C /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA806E2C78A4F10082BF2C /* HeaderLabel.swift */; };
 		FCBA80722C78A9CB0082BF2C /* HeaderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA80712C78A9CB0082BF2C /* HeaderCard.swift */; };
 		FCBA80742C78ABF60082BF2C /* DescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA80732C78ABF60082BF2C /* DescriptionLabel.swift */; };
+		FCBA80782C78DD540082BF2C /* HeaderCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA80772C78DD540082BF2C /* HeaderCardModel.swift */; };
+		FCBA807A2C78E9A90082BF2C /* ServiceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA80792C78E9A90082BF2C /* ServiceCard.swift */; };
+		FCBA807C2C7A4BA60082BF2C /* ServicesCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA807B2C7A4BA60082BF2C /* ServicesCardModel.swift */; };
+		FCBA807E2C7A6AF90082BF2C /* ApartmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA807D2C7A6AF90082BF2C /* ApartmentCard.swift */; };
+		FCBA80802C7BC34E0082BF2C /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA807F2C7BC34E0082BF2C /* UIView + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		FCBA806E2C78A4F10082BF2C /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
 		FCBA80712C78A9CB0082BF2C /* HeaderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCard.swift; sourceTree = "<group>"; };
 		FCBA80732C78ABF60082BF2C /* DescriptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionLabel.swift; sourceTree = "<group>"; };
+		FCBA80772C78DD540082BF2C /* HeaderCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCardModel.swift; sourceTree = "<group>"; };
+		FCBA80792C78E9A90082BF2C /* ServiceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCard.swift; sourceTree = "<group>"; };
+		FCBA807B2C7A4BA60082BF2C /* ServicesCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCardModel.swift; sourceTree = "<group>"; };
+		FCBA807D2C7A6AF90082BF2C /* ApartmentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentCard.swift; sourceTree = "<group>"; };
+		FCBA807F2C7BC34E0082BF2C /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +70,11 @@
 		FCBA80592C789CBB0082BF2C /* layout#2Build */ = {
 			isa = PBXGroup;
 			children = (
-				FCBA80702C78A7D40082BF2C /* UI */,
-				FCBA805A2C789CBB0082BF2C /* AppDelegate.swift */,
-				FCBA805C2C789CBB0082BF2C /* SceneDelegate.swift */,
+				FCBA80812C7BC49B0082BF2C /* App */,
+				FCBA80762C78DD370082BF2C /* Model */,
+				FCBA80702C78A7D40082BF2C /* View */,
 				FCBA805E2C789CBB0082BF2C /* ViewController.swift */,
+				FCBA807F2C7BC34E0082BF2C /* UIView + Ext.swift */,
 				FCBA80632C789CBD0082BF2C /* Assets.xcassets */,
 				FCBA80652C789CBD0082BF2C /* LaunchScreen.storyboard */,
 				FCBA80682C789CBD0082BF2C /* Info.plist */,
@@ -71,13 +82,15 @@
 			path = "layout#2Build";
 			sourceTree = "<group>";
 		};
-		FCBA80702C78A7D40082BF2C /* UI */ = {
+		FCBA80702C78A7D40082BF2C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FCBA80752C78ABFE0082BF2C /* Label */,
 				FCBA80712C78A9CB0082BF2C /* HeaderCard.swift */,
+				FCBA80792C78E9A90082BF2C /* ServiceCard.swift */,
+				FCBA807D2C7A6AF90082BF2C /* ApartmentCard.swift */,
 			);
-			path = UI;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FCBA80752C78ABFE0082BF2C /* Label */ = {
@@ -87,6 +100,24 @@
 				FCBA80732C78ABF60082BF2C /* DescriptionLabel.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		FCBA80762C78DD370082BF2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA80772C78DD540082BF2C /* HeaderCardModel.swift */,
+				FCBA807B2C7A4BA60082BF2C /* ServicesCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCBA80812C7BC49B0082BF2C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA805A2C789CBB0082BF2C /* AppDelegate.swift */,
+				FCBA805C2C789CBB0082BF2C /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,12 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBA807E2C7A6AF90082BF2C /* ApartmentCard.swift in Sources */,
+				FCBA80782C78DD540082BF2C /* HeaderCardModel.swift in Sources */,
 				FCBA805F2C789CBB0082BF2C /* ViewController.swift in Sources */,
+				FCBA80802C7BC34E0082BF2C /* UIView + Ext.swift in Sources */,
 				FCBA806F2C78A4F10082BF2C /* HeaderLabel.swift in Sources */,
 				FCBA80722C78A9CB0082BF2C /* HeaderCard.swift in Sources */,
 				FCBA80742C78ABF60082BF2C /* DescriptionLabel.swift in Sources */,
 				FCBA805B2C789CBB0082BF2C /* AppDelegate.swift in Sources */,
+				FCBA807C2C7A4BA60082BF2C /* ServicesCardModel.swift in Sources */,
 				FCBA805D2C789CBB0082BF2C /* SceneDelegate.swift in Sources */,
+				FCBA807A2C78E9A90082BF2C /* ServiceCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
