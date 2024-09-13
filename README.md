@@ -3,6 +3,7 @@
  
  Used in a project:
 * UIKit
+* UIScrollView
 * MVC
 
 ---
